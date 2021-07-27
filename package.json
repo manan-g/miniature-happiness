@@ -1,0 +1,31 @@
+{
+    "name": "basic-mern-todo",
+    "version": "1.0.0",
+    "description": "basic-mern-todo",
+    "main": "index.js",
+    "scripts": {
+        "client-install": "cd client && npm install",
+        "client": "npm start --prefix client",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src/index.js",
+        "dev": "concurrently \"nodemon src/index.js\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
+    },
+    "author": "manan",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "concurrently": "^6.2.0",
+        "connect-mongodb-session": "^2.4.1",
+        "cors": "^2.8.5",
+        "dotenv": "^9.0.1",
+        "express": "^4.17.1",
+        "express-csp-header": "^5.0.0",
+        "express-session": "^1.17.1",
+        "helmet": "^4.6.0",
+        "mongoose": "^5.12.7",
+        "passport": "^0.4.1",
+        "passport-local-mongoose": "^6.1.0",
+        "winston": "^3.3.3"
+    }
+}

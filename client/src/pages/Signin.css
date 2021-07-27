@@ -1,0 +1,32 @@
+#sign_in_ {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sign_in_form_back {
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: dimgrey;
+    padding: 0px 23px 25px;
+    border-radius: 8px;
+}
+
+.sign_in_heading {
+    color: black;
+}
+
+#sign_in_message {
+    color: #800000;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 7px;
+}
+.sign_in_link {
+    color: black;
+    align-self: center;
+}

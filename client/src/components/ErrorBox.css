@@ -1,0 +1,14 @@
+.error_box{
+    z-index: 4;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #565658;
+    color: black;
+    /* display: none; */
+}

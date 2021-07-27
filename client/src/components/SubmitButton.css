@@ -1,0 +1,28 @@
+._input_submit_button {
+  background-color: black;
+  border-style: solid;
+  border-color: rgb(82, 81, 81);
+  border-radius: 5px;
+  padding-left: 12px;
+  margin-bottom: 5.844px;
+  height: 37.523px;
+  width: 100%;
+  max-width: 430px;
+  color: grey;
+}
+._input_submit_button:focus-visible {
+  border-color: grey;
+  outline: grey;
+}
+._input_submit_button::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(197, 191, 191);
+  opacity: 0.7; /* Firefox */
+}
+._input_submit_button:hover {
+  color: #c0bebe;
+  border: black solid 1px;
+}
+/* @media only screen and (max-width: 768px) {
+  
+} */

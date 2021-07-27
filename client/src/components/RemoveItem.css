@@ -1,0 +1,26 @@
+.removeitem_box {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    /* background: #cecece; */
+    border-radius: 50%;
+  }
+  
+  .removeitem_svg {
+    /* border: 1px solid red; */
+    display: block;
+  }
+  
+  .removeitem_close-x {
+    stroke: #646262;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 5;
+  }
+  .removeitem_svg:hover > .removeitem_close-x {
+    stroke: #cac6c6;
+  }
+  .removeitem_svg:active {
+    background: #646262;
+    border-radius: 50%;
+  }

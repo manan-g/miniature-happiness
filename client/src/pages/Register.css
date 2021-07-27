@@ -1,0 +1,35 @@
+#register_ {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.register_form_back {
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: dimgrey;
+    padding: 0px 23px 25px;
+    border-radius: 8px;
+}
+
+.register_heading {
+    color: black;
+}
+
+#register_message {
+    color: #800000;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 7px;
+}
+.register_link {
+    color: black;
+    align-self: center;
+}
+@media only screen and (max-width: 768px) {
+    
+}

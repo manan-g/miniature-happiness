@@ -1,0 +1,61 @@
+.welcome {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    transition: background-image 1.5s linear;
+}
+.welcome_time {
+    color: white;
+    font-size: 9rem;
+    /* font-weight: 500; */
+    margin-bottom: 0;
+    height: min-content;
+}
+#welcome_subscript {
+    font-size: 3rem;
+}
+.welcome_greeting {
+    margin-top: 2px;
+    color: white;
+    font-size: 5rem;
+    /* font-weight: 500; */
+}
+.welcome_link {
+    color: white;
+    align-self: center;
+}
+a.welcome_link,
+p#welcome_subscript,
+p.welcome_greeting,
+p.welcome_time {
+    text-shadow: 0 0 3px black;
+}
+p.welcome_time {
+    line-height: 27%;
+}
+.welcome_logout_button {
+    border: none;
+    background: none;
+    color: white;
+    text-shadow: 0 0 3px black;
+    font: inherit;
+    text-decoration: underline;
+}
+.welcome_logout_button:hover {
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .welcome_time {
+        font-size: 7rem;
+    }
+    .welcome_greeting {
+        font-size: 3rem;
+    }
+  }
