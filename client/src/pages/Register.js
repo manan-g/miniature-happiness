@@ -14,7 +14,7 @@ const axios = require("axios");
 function validate_input(Email, FirstName, LastName, Password) {
   return new Promise((resolve, reject) => {
     let message = "";
-    if (Email != null) {
+    if (Email != null || "") {
       //regex for validating the emails
       if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email)) {
         message = message + "Enter the valid Email address<br/>";
@@ -22,13 +22,13 @@ function validate_input(Email, FirstName, LastName, Password) {
     } else {
       message = message + "Enter Email address<br/>";
     }
-    if (FirstName == null) {
+    if (FirstName == null || FirstName === "") {
       message = message + "Enter First Name<br/>";
     }
-    else if (LastName == null) {
+    else if (LastName == null || FirstName ===  "") {
       message = message + "Enter Last Name<br/>";
     }
-    else if (Password == null) {
+    else if (Password == null || FirstName ===  "") {
       message = message + "Enter password<br/>";
     }
 
@@ -87,6 +87,7 @@ function Register() {
     const runAsync = async () => {
       try {
         if (!isCancelled) {
+          setLoading(true);
           if(document.getElementById("register_").style.backgroundImage === ""){
             await change_wallpaper("sign","register_");
         }
@@ -122,7 +123,7 @@ function Register() {
               set_state={setPassword}
               placeholder="Password"
             ></Input>
-            <SubmitButton text="Login" />
+            <SubmitButton text="Register" />
           </form>
         </div>
         <Link className="register_link" to="/">

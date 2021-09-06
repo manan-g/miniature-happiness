@@ -33,3 +33,5 @@ yarn-error.log*
 archive.js
 combined.log
 error.log
+Todo_similarity.js
+TodoSimilarityUtils.js
