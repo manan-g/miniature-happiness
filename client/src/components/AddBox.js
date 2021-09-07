@@ -11,7 +11,7 @@ export default function AddBox(props) {
     
     function addItem(e) {
         e.preventDefault();
-        if(item!=="")
+        if(item!=="" && item!=null && item!=undefined)
         {
             let item_data = item;
             setItem("");

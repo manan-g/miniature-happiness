@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Signin from "./pages/Signin";
 import Welcome from "./pages/Welcome";
 import Todo from "./pages/Todo";
+import AdminWallpaper from "./pages/admin-wallpaper"
 
 function App() {
     return (
@@ -23,6 +24,9 @@ function App() {
                     </Route>
                     <Route exact path="/todo">
                         <Todo />
+                    </Route>
+                    <Route exact path="/adminwallpaper">
+                    <AdminWallpaper/>
                     </Route>
                     <Route exact path="/test">
                     </Route>

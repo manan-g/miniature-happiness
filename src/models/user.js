@@ -34,6 +34,10 @@ const userSchema = new mongoose.Schema(
                 message: "Please enter a valid email",
             },
         },
+        admin:{
+            type:Number,
+            default:0,
+        },
         // username: {
         //   type: String,
         //   required: true,

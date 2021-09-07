@@ -7,7 +7,8 @@ export default function ErrorBox()
 {
     const [showMe,setShowMe] = useState(false);
     const [,,,PageError,setPageError] = useStateValue();
-    
+    let length = 90;
+
   
     const SyncTimeOut = async ()=>{
         return new Promise((resolve, reject) => {
@@ -50,6 +51,6 @@ export default function ErrorBox()
 
     return <div >
     {/* <button onClick={e=>{setPageError({status:100})}}></button> */}
-    {showMe && <div className="error_box">{showMe.message}</div>}
+    {showMe && <div className="error_box">{showMe.message && (showMe.message.length>length?showMe.message.substr(0,length-3)+"...":showMe.message)}</div>}
     </div>
 }

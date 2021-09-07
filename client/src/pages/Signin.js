@@ -14,7 +14,7 @@ const axios = require("axios");
 function validate_input(Email, Password) {
   return new Promise((resolve, reject) => {
     let message = "";
-    if (Email != null) {
+    if (Email != null && Email!="") {
       //regex for validating the emails
       if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email)) {
         message = message + "Enter the valid Email address<br/>";
@@ -22,7 +22,7 @@ function validate_input(Email, Password) {
     } else {
       message = message + "Enter Email address<br/>";
     }
-    if (Password == null) {
+    if (Password == null || Password=="") {
       message = message + "Enter password<br/>";
     }
 

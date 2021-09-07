@@ -109,6 +109,17 @@ exports.check_auth = (req, res, next) => {
     }
 };
 
+exports.check_admin =(req,res,next) =>{
+    if(req.user.admin===1)
+    {
+        next();
+    }
+    else
+    {
+        res.json("Invalid");
+    }
+}
+
 exports.check_not_auth = (req, res, next) => {
     if (!req.isAuthenticated()) {
         next();
