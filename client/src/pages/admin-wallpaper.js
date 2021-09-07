@@ -25,7 +25,8 @@ export default function AdminWallpaper() {
     const handleSubmit = (e)=>{
         e.preventDefault();
         setSuccess(null);
-        // setImages(null);
+        setImages(null);
+        setIndexes({});
         if(Count!=null && Count>0 && Count<31 && Count!=""&& Count!=undefined)
         {
             axios.post(process.env.REACT_APP_API_DOMAIN +"/getadminwallpaper",{
@@ -37,6 +38,7 @@ export default function AdminWallpaper() {
                 // console.log(response.data);
                 if(response.data!="Invalid")
                     setImages(response.data);
+                // console.log(response.data);
             }).catch(err=>{
                 console.log(err);
             })  
